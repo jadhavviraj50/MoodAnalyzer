@@ -22,9 +22,17 @@ namespace TestProject1
             string expected = analyser.AnalyseMood("I am in any mood");
             Assert.AreEqual("HAPPY", expected);
         }
-        
 
-        
+        [TestMethod]
+        public void GivenInputStringConstructor_ShouldReturnSad()
+        {
+            MoodAnalyser2 analyser = new MoodAnalyser2();
+            string expected = analyser.AnalyseMood2();
+            Assert.AreEqual("SAD", expected);
+        }
+
+
+
 
     }
 }
