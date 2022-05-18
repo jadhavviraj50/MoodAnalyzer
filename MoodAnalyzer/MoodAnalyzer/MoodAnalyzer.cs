@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MoodAnalyzerProblem
 {
+  
     public class MoodAnalyzer1
     {
         string message;
@@ -21,6 +22,7 @@ namespace MoodAnalyzerProblem
                 return "HAPPY";
             }
             return message;
+  
         }
 
     }
