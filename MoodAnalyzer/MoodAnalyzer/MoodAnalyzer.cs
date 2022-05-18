@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MoodAnalyzerProblem
 {
-    public class MoodAnalyzer
+    public class MoodAnalyzer1
     {
         string message;
         public string AnalyseMood(string message)
@@ -14,11 +14,11 @@ namespace MoodAnalyzerProblem
 
             if (message.ToLower().Contains("sad"))
             {
-                return "Sad";
+                return "SAD";
             }
             else
             {
-                return "Happy";
+                return "HAPPY";
             }
             return message;
         }
