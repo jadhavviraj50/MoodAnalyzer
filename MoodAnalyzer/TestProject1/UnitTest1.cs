@@ -31,6 +31,14 @@ namespace TestProject1
             Assert.AreEqual("SAD", expected);
         }
 
+        [TestMethod]
+        public void GivenInputStringConstructor1_ShouldReturnSad()
+        {
+            MoodAnalyser2 analyser = new MoodAnalyser2("I am in Happy Mood");
+            string expected = analyser.AnalyseMood2();
+            Assert.AreEqual("HAPPY", expected);
+        }
+
 
 
 
