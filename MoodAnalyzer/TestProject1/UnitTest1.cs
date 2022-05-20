@@ -41,6 +41,13 @@ namespace TestProject1
         [TestMethod]
         public void GivenNullMood_ShouldReturnHappy()
         {
+            MoodAnalyse analyser = new MoodAnalyse("Happy");
+            string expected = analyser.analysisMood();
+            Assert.AreEqual("Happy", expected);
+        }
+        [TestMethod]
+        public void GivenNullMood_ShouldThrowMoodAnalysisException()
+        {
             MoodAnalyse analyser = new MoodAnalyse("Null");
             string expected = analyser.analysisMood();
             Assert.AreEqual("Happy", expected);
