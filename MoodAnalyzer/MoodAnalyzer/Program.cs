@@ -24,4 +24,4 @@ Console.WriteLine("Parameterized Constructor : " +result3);
 
 MoodAnalyse analyzer4 = new("Null");
 string result4 = analyzer4.analysisMood();
-Console.WriteLine("Handle Exception : " + result4);
+Console.WriteLine("Custom Exception : " + result4);
