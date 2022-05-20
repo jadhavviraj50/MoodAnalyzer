@@ -38,6 +38,12 @@ namespace TestProject1
             string expected = analyser.AnalyseMood2();
             Assert.AreEqual("HAPPY", expected);
         }
-
+        [TestMethod]
+        public void GivenNullMood_ShouldReturnHappy()
+        {
+            MoodAnalyse analyser = new MoodAnalyse("Null");
+            string expected = analyser.analysisMood();
+            Assert.AreEqual("Happy", expected);
+        }
     }
 }
