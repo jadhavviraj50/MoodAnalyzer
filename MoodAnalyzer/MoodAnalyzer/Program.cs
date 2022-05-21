@@ -3,7 +3,6 @@
 
 using MoodAnalyzerProblem;
 
-
 Console.WriteLine("Welcome to Mood Analyzer Problem");
 
 MoodAnalyzer1 analyzer = new();
@@ -25,3 +24,7 @@ Console.WriteLine("Parameterized Constructor : " +result3);
 MoodAnalyse analyzer4 = new("Null");
 string result4 = analyzer4.analysisMood();
 Console.WriteLine("Custom Exception : " + result4);
+
+
+string result8 = MoodAnlyserFactory.InvokeAnalyzerMood("Happy", "AnalyseMoodMethod");
+Console.WriteLine(result8);

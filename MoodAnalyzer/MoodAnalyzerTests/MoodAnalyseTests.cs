@@ -47,5 +47,7 @@ namespace MoodAnalyzerProblem.Tests
             object obj = MoodAnlyserFactory.CreateMoodAnalyser("MoodAnalyser.MoodAnalyse", "MoodAnalyse");
             expected.Equals(obj);
         }
+
+        
     }
 }

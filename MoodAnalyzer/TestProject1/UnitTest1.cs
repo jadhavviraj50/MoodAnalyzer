@@ -52,5 +52,6 @@ namespace TestProject1
             string expected = analyser.analysisMood();
             Assert.AreEqual("Happy", expected);
         }
+        
     }
 }
