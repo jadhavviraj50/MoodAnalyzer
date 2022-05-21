@@ -72,5 +72,12 @@ namespace MoodAnalyzerProblem.Tests
             string mood = MoodAnlyserFactory.InvokeAnalyzerMood("Happy", "AnalyseMood");
             Assert.AreEqual(expected, mood);
         }
+
+        [TestMethod]
+        public void GivenHappyMessage_WithReflector_ShouldReturn_Happy()
+        {
+            string result = MoodAnlyserFactory.SetField("HAPPY", "message");
+            Assert.AreEqual("HAPPY", result);
+        }
     }
 }

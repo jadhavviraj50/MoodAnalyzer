@@ -20,7 +20,7 @@ namespace MoodAnalyzerProblem
             {
                 if (message1.Equals(string.Empty))
                 {
-                    throw new MoodCustomException(MoodCustomException.ExpType.Empty_Message, "Mood should not be empty");
+                    throw new MoodCustomException(MoodCustomException.ExpType.NULL_MOOD, "Mood should not be empty");
                 }
                 if (message1.Contains("Sad"))
                 {
@@ -33,7 +33,7 @@ namespace MoodAnalyzerProblem
             }
             catch (NullReferenceException)
             {
-                throw new MoodCustomException(MoodCustomException.ExpType.Null_Message, "Mood should not be Null");
+                throw new MoodCustomException(MoodCustomException.ExpType.EMPTY_MOOD, "Mood should not be Null");
             }
 
         }

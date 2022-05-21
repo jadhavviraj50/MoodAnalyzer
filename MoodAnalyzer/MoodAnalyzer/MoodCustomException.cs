@@ -10,16 +10,13 @@ namespace MoodAnalyzerProblem
     {
         public enum ExpType
         {
-            Empty_Message,
-            Null_Message,
-            NO_SUCH_METHOD,
-            NO_SUCH_CLASS,
+            NULL_MOOD, EMPTY_MOOD, NO_SUCH_CLASS, NO_SUCH_METHOD, NO_SUCH_FIELD
         }
-        public readonly ExpType type;
-       
+        public ExpType exceptionType;
         public MoodCustomException(ExpType type, string message) : base(message)
         {
-            this.type = type;
+            this.exceptionType = type;
         }
+
     }
 }
